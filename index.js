@@ -1,12 +1,19 @@
-var katzDeli = [];
+var katzDeliLine = [];
 
 function takeANumber(katzDeliLine, name) {
   katzDeliLine.push(name);
-  var lineNumber = katzDeliLine.length;
-   return `Welcome, ${name}. You are number ${lineNumber} in line.`;
+  var placeInLine = katzDeliLine.length;
+   return `Welcome, ${name}. You are number ${placeInLine} in line.`;
 }
 
-const deliLine = ["Steven", "Blake", "Avi"]
+function takeANumber(katzDeliLine) {
+  x = katzDeliLine.length + 1;
+  katzDeliLine.push(x);
+  return katzDeliLine.length;
+}
+
+
+const deliLine = ["Steven", "Blake", "Avi"];
 
 function nowServing(deliLine) {
     if (deliLine.length === 0) {
